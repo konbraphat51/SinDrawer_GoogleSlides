@@ -1,0 +1,65 @@
+{
+  "extensionName": { "message": "SinDrawer for Google Slides" },
+  "extensionDescription": {
+    "message": "Generate SinDrawer sine-wave art from the slide title and set it as the Google Slides background in one click."
+  },
+  "sectionSeed": { "message": "Seed" },
+  "sectionAppearance": { "message": "Appearance" },
+  "sectionOutput": { "message": "Output" },
+  "labelUseSlideTitle": { "message": "Use slide titles as seed" },
+  "labelSeedText": { "message": "Seed text" },
+  "placeholderSeedText": { "message": "Any text, e.g. the slide title" },
+  "labelColorWave": { "message": "Wave color" },
+  "labelPlacement": { "message": "Position" },
+  "placementRightFill": { "message": "Right fill" },
+  "placementRightTopFill": { "message": "Right top fill" },
+  "placementTop": { "message": "Top line" },
+  "placementTopFill": { "message": "Top fill" },
+  "labelAxisX": { "message": "Axis X (%)" },
+  "labelAxisY": { "message": "Axis Y (%)" },
+  "labelAmplitudeMax": { "message": "Max amplitude (px)" },
+  "labelColorBackground": { "message": "Background color" },
+  "labelTransparent": { "message": "Transparent" },
+  "labelWidthOutput": { "message": "Image width (px)" },
+  "labelLanguage": { "message": "Language" },
+  "languageAuto": { "message": "Auto" },
+  "buttonApplyCurrent": { "message": "Apply to this slide" },
+  "buttonApplyAll": {
+    "message": "Apply to all $count$ slides",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "buttonCopy": { "message": "Copy image" },
+  "buttonDownload": { "message": "Download PNG" },
+  "buttonConnect": { "message": "Connect Google account" },
+  "buttonResetSettings": { "message": "Reset settings" },
+  "infoSlideCurrent": {
+    "message": "Current slide title: \"$title$\"",
+    "placeholders": { "title": { "content": "$1" } }
+  },
+  "infoSlideUntitled": { "message": "The current slide has no title; an empty seed is used." },
+  "infoAllSlidesSeed": { "message": "\"All slides\" uses each slide's own title." },
+  "statusLoading": { "message": "Reading the presentation…" },
+  "statusApplying": { "message": "Applying background…" },
+  "statusApplied": {
+    "message": "Applied to $count$ slide(s).",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "statusCopied": { "message": "Image copied to the clipboard." },
+  "errorNotSlides": {
+    "message": "Open a Google Slides presentation to apply backgrounds. You can still copy or download the image."
+  },
+  "errorOauthUnconfigured": {
+    "message": "OAuth is not configured. Set GOOGLE_OAUTH_CLIENT_ID in .env and rebuild (see README)."
+  },
+  "errorNotAuthorized": {
+    "message": "Connect your Google account to read slide titles and apply backgrounds."
+  },
+  "errorSharingBlocked": {
+    "message": "Your Drive does not allow link sharing, so the image cannot be passed to Slides. Use Copy or Download instead."
+  },
+  "errorApi": { "message": "The Google API request failed." },
+  "errorUnknown": { "message": "Something went wrong." },
+  "errorStandalone": {
+    "message": "Running outside the extension: only preview, copy and download are available."
+  }
+}
