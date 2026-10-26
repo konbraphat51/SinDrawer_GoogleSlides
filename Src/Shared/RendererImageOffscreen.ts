@@ -1,4 +1,4 @@
-// Renders background PNGs with OffscreenCanvas, which works inside the service worker.
+// Renders background PNGs with OffscreenCanvas; works in both the service worker and the popup.
 import type { Size } from "../Core/Geometry"
 import { renderBackground } from "../Core/Renderer"
 import type { Settings } from "../Core/Settings"

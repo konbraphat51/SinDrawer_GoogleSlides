@@ -3,7 +3,7 @@ import { ErrorApplication } from "../Shared/ErrorApplication"
 import type { Message, Response } from "../Shared/Messages"
 import { HandlerMessage } from "./HandlerMessage"
 import { ProviderTokenChrome } from "./ProviderTokenChrome"
-import { RendererImageOffscreen } from "./RendererImageOffscreen"
+import { RendererImageOffscreen } from "../Shared/RendererImageOffscreen"
 
 const handler = new HandlerMessage({
   providerToken: new ProviderTokenChrome(),
