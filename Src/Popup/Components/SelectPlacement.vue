@@ -47,4 +47,8 @@ export default defineComponent({
   justify-content: space-between;
   gap: 8px;
 }
+
+.field select {
+  min-width: 150px;
+}
 </style>

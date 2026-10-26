@@ -1,3 +1,4 @@
 dist/
 pnpm-lock.yaml
 CLAUDE.md
+.playwright-mcp/

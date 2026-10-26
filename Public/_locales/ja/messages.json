@@ -1,52 +1,127 @@
 {
-  "extensionName": { "message": "SinDrawer for Google スライド" },
+  "extensionName": {
+    "message": "SinDrawer for Google スライド"
+  },
   "extensionDescription": {
     "message": "スライドタイトルから SinDrawer の正弦波アートを生成し、ワンクリックで Google スライドの背景に設定します。"
   },
-  "sectionSeed": { "message": "シード" },
-  "sectionAppearance": { "message": "見た目" },
-  "sectionOutput": { "message": "出力" },
-  "labelUseSlideTitle": { "message": "スライドタイトルをシードに使う" },
-  "labelSeedText": { "message": "シードテキスト" },
-  "placeholderSeedText": { "message": "任意のテキスト（例: スライドタイトル）" },
-  "labelColorWave": { "message": "波の色" },
-  "labelPlacement": { "message": "配置" },
-  "placementRightFill": { "message": "右側塗りつぶし" },
-  "placementRightTopFill": { "message": "右上塗りつぶし" },
-  "placementTop": { "message": "上部ライン" },
-  "placementTopFill": { "message": "上部塗りつぶし" },
-  "labelAxisX": { "message": "軸の X 位置 (%)" },
-  "labelAxisY": { "message": "軸の Y 位置 (%)" },
-  "labelAmplitudeMax": { "message": "最大振幅 (px)" },
-  "labelColorBackground": { "message": "背景色" },
-  "labelTransparent": { "message": "透明" },
-  "labelWidthOutput": { "message": "画像の幅 (px)" },
-  "labelLanguage": { "message": "言語" },
-  "languageAuto": { "message": "自動" },
-  "buttonApplyCurrent": { "message": "このスライドに適用" },
+  "sectionSeed": {
+    "message": "シード"
+  },
+  "sectionAppearance": {
+    "message": "見た目"
+  },
+  "sectionOutput": {
+    "message": "出力"
+  },
+  "labelUseSlideTitle": {
+    "message": "スライドタイトルをシードに使う"
+  },
+  "labelSeedText": {
+    "message": "シードテキスト"
+  },
+  "placeholderSeedText": {
+    "message": "任意のテキスト（例: スライドタイトル）"
+  },
+  "labelColorWave": {
+    "message": "波の色"
+  },
+  "labelPlacement": {
+    "message": "配置"
+  },
+  "placementRightFill": {
+    "message": "右側塗りつぶし"
+  },
+  "placementRightTopFill": {
+    "message": "右上塗りつぶし"
+  },
+  "placementTop": {
+    "message": "上部ライン"
+  },
+  "placementTopFill": {
+    "message": "上部塗りつぶし"
+  },
+  "labelAxisX": {
+    "message": "軸の X 位置 (%)"
+  },
+  "labelAxisY": {
+    "message": "軸の Y 位置 (%)"
+  },
+  "labelAmplitudeMax": {
+    "message": "最大振幅 (px)"
+  },
+  "labelColorBackground": {
+    "message": "背景色"
+  },
+  "labelTransparent": {
+    "message": "透明"
+  },
+  "labelWidthOutput": {
+    "message": "画像の幅 (px)"
+  },
+  "labelLanguage": {
+    "message": "言語"
+  },
+  "languageAuto": {
+    "message": "自動"
+  },
+  "buttonApplyCurrent": {
+    "message": "このスライドに適用"
+  },
   "buttonApplyAll": {
     "message": "全 $count$ 枚のスライドに適用",
-    "placeholders": { "count": { "content": "$1" } }
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
   },
-  "buttonCopy": { "message": "画像をコピー" },
-  "buttonDownload": { "message": "PNG をダウンロード" },
-  "buttonConnect": { "message": "Google アカウントを接続" },
-  "buttonResetSettings": { "message": "設定をリセット" },
+  "buttonApplyAllUnknown": {
+    "message": "すべてのスライドに適用"
+  },
+  "buttonCopy": {
+    "message": "画像をコピー"
+  },
+  "buttonDownload": {
+    "message": "PNG をダウンロード"
+  },
+  "buttonConnect": {
+    "message": "Google アカウントを接続"
+  },
+  "buttonResetSettings": {
+    "message": "設定をリセット"
+  },
   "infoSlideCurrent": {
     "message": "現在のスライドタイトル: 「$title$」",
-    "placeholders": { "title": { "content": "$1" } }
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
   },
   "infoSlideUntitled": {
     "message": "現在のスライドにはタイトルがないため、空のシードを使います。"
   },
-  "infoAllSlidesSeed": { "message": "「全スライド」では各スライドのタイトルをそれぞれ使います。" },
-  "statusLoading": { "message": "プレゼンテーションを読み込み中…" },
-  "statusApplying": { "message": "背景を適用中…" },
+  "infoAllSlidesSeed": {
+    "message": "「全スライド」では各スライドのタイトルをそれぞれ使います。"
+  },
+  "statusLoading": {
+    "message": "プレゼンテーションを読み込み中…"
+  },
+  "statusApplying": {
+    "message": "背景を適用中…"
+  },
   "statusApplied": {
     "message": "$count$ 枚のスライドに適用しました。",
-    "placeholders": { "count": { "content": "$1" } }
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
   },
-  "statusCopied": { "message": "画像をクリップボードにコピーしました。" },
+  "statusCopied": {
+    "message": "画像をクリップボードにコピーしました。"
+  },
   "errorNotSlides": {
     "message": "背景を適用するには Google スライドを開いてください。画像のコピーとダウンロードは利用できます。"
   },
@@ -59,8 +134,12 @@
   "errorSharingBlocked": {
     "message": "Drive でリンク共有が許可されていないため、画像を Google スライドに渡せません。コピーかダウンロードを使ってください。"
   },
-  "errorApi": { "message": "Google API へのリクエストに失敗しました。" },
-  "errorUnknown": { "message": "エラーが発生しました。" },
+  "errorApi": {
+    "message": "Google API へのリクエストに失敗しました。"
+  },
+  "errorUnknown": {
+    "message": "エラーが発生しました。"
+  },
   "errorStandalone": {
     "message": "拡張機能の外で実行中です。プレビュー・コピー・ダウンロードのみ利用できます。"
   }

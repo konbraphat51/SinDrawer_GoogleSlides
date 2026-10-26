@@ -13,7 +13,11 @@
       :disabled="!isApplyEnabled || isBusy || countSlide < 2"
       @click="$emit('applyAll')"
     >
-      {{ translate("buttonApplyAll", [String(countSlide)]) }}
+      {{
+        countSlide > 0
+          ? translate("buttonApplyAll", [String(countSlide)])
+          : translate("buttonApplyAllUnknown")
+      }}
     </button>
     <div class="actions__row">
       <button class="button button--quiet" :disabled="isBusy" @click="$emit('copy')">
