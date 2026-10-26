@@ -5,16 +5,16 @@
 - Write SOLID, readable, and maintainable code
 - Put system documents in `/Docs/`, research notes (if user ordered you to research) in `/ResearchNotes/`
 - Write comments in English
-    - Comments should be concise. Should be only single line per topic.
-        - There is NO need to leave comments for each code update.
-            - ex: "This code is left because of..."
-            - ex: "This code is deleted because of..."
-        - Be aware if the code readers would prefer to read your comments, or it is just noise for them.
-    - Write comments for the responsibility of the file itself at the top
-    - Write comments for each public class/method/variable
-        - If Python, write in docstring format
-        - If C#, write in XML format
-        - If TypeScript, write in TSDoc format
+  - Comments should be concise. Should be only single line per topic.
+    - There is NO need to leave comments for each code update.
+      - ex: "This code is left because of..."
+      - ex: "This code is deleted because of..."
+    - Be aware if the code readers would prefer to read your comments, or it is just noise for them.
+  - Write comments for the responsibility of the file itself at the top
+  - Write comments for each public class/method/variable
+    - If Python, write in docstring format
+    - If C#, write in XML format
+    - If TypeScript, write in TSDoc format
 
 ```python:sample.py
 def transcribe(
@@ -50,27 +50,27 @@ def transcribe(
 ```
 
 - Prepare English and Japanese versions for all system documents.
-    - Make English version as the primary version, and Japanese version as the secondary version.
-        - ex: `README.md` (English) and `README.ja.md` (Japanese)
+  - Make English version as the primary version, and Japanese version as the secondary version.
+    - ex: `README.md` (English) and `README.ja.md` (Japanese)
 
 - For research notes (if ordered), only either language is allowed. Match with the language of the user prompt.
-    - Files in `/ResearchNotes` created by Claude must start from `YYYYMMDD_` prefix.
+  - Files in `/ResearchNotes` created by Claude must start from `YYYYMMDD_` prefix.
 - all in-UI text should be in English by default, but support Japanese localization.
 - Everytime updated the code, check all documents and update them if necessary.
 - Debug the frontend by yourself
 - Make granular commits for each unit of implementation. One commit per small, self-contained unit. Do not bundle a whole subsystem into one commit. Commit each unit as soon as its checks pass.
-    - Set Angular Conventional commit message prefixes.
-        - For update in `/ResearchNotes/`, set prefix as `resn:`
+  - Set Angular Conventional commit message prefixes.
+    - For update in `/ResearchNotes/`, set prefix as `resn:`
 - If you use Python
-    - Use `uv` for package management
-    - Enable strict typing
-    - Add appropriate package for better code/quality
+  - Use `uv` for package management
+  - Enable strict typing
+  - Add appropriate package for better code/quality
 - If you use JavaScript/TypeScript
-    - Use `pnpm` for package management
-    - Add appropriate package for better code/quality
-    - Use Vue for frontend
-        - Granular components are preferred.
-    - Write in Single File Component style, such as
+  - Use `pnpm` for package management
+  - Add appropriate package for better code/quality
+  - Use Vue for frontend
+    - Granular components are preferred.
+  - Write in Single File Component style, such as
 
 ```vue
 <template>HTML</template>
@@ -84,15 +84,15 @@ export default {
 
 - Write documents to understand the code architecture. Such as: class diagram, sequence diagram...
 - In `/README.md`, write:
-    - System Name as H1
-    - Easy description of what system does
-    - How to setup from `git clone`
-    - How to run for second time and later
-    - Important CLIs
+  - System Name as H1
+  - Easy description of what system does
+  - How to setup from `git clone`
+  - How to run for second time and later
+  - Important CLIs
 
 - If API keys or other enviroment variables, read from `.env`
-    - git ignore `.env`
-    - create `.env.example`
+  - git ignore `.env`
+  - create `.env.example`
 
 ### Naming Conventions
 

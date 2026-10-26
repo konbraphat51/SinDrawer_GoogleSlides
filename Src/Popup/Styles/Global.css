@@ -1,0 +1,109 @@
+/* Global popup styles: theme tokens, base elements, and shared button classes. */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1f2328;
+  --color-text-muted: #656d76;
+  --color-border: #d0d7de;
+  --color-accent: #1f9d55;
+  --color-accent-hover: #188247;
+  --color-accent-text: #ffffff;
+  --color-input-bg: #ffffff;
+  --color-info-bg: #eef4ff;
+  --color-success-bg: #e6f6ec;
+  --color-error-bg: #fdecec;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1e2127;
+    --color-text: #e6e8eb;
+    --color-text-muted: #9aa3ad;
+    --color-border: #3a3f47;
+    --color-accent: #3fbf73;
+    --color-accent-hover: #4fd283;
+    --color-accent-text: #0d1a12;
+    --color-input-bg: #2a2e35;
+    --color-info-bg: #1f2a3d;
+    --color-success-bg: #1b3326;
+    --color-error-bg: #3d1f1f;
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 360px;
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font:
+    13px/1.4 system-ui,
+    -apple-system,
+    "Segoe UI",
+    "Hiragino Sans",
+    "Yu Gothic UI",
+    sans-serif;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 4px 6px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-input-bg);
+  color: inherit;
+  font: inherit;
+}
+
+.button {
+  padding: 7px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-input-bg);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  border-color: var(--color-accent);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.button--primary {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+  font-weight: 600;
+}
+
+.button--primary:hover:not(:disabled) {
+  background: var(--color-accent-hover);
+}
+
+.button--quiet {
+  font-size: 12px;
+}
+
+.button--small {
+  padding: 3px 8px;
+  font-size: 12px;
+}
+
+.button--link {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--color-text-muted);
+  font-size: 11px;
+  text-decoration: underline;
+}

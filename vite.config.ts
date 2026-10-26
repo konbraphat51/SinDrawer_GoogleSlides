@@ -3,7 +3,7 @@ import { fileURLToPath } from "node:url"
 import { readFileSync } from "node:fs"
 import { defineConfig, loadEnv, type Plugin } from "vite"
 import vue from "@vitejs/plugin-vue"
-import { buildManifest } from "./BuildTools/ManifestBuilder"
+import { buildManifest } from "./BuildTools/ManifestBuilder.ts"
 
 const projectRoot = fileURLToPath(new URL(".", import.meta.url))
 
